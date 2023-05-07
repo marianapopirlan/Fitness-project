@@ -31,14 +31,14 @@ corespunzand fiecareia din cele 4 sectiuni. Butoanele pentru "Membri", "Instruct
 Din punct de vedere al bazei de date, aplicatia presupun ca ar avea nevoie de 3 tabele:
 
 1) Members, in componenta caruia avem campurile:
-•	id
+•	cnp
 •   name
 •	date_of_birth
 •	join_date
 •	expiry_date
 •	e_mail
 2) Trainers, in componenta caruia avem campurile:
-•	id
+•	cnp
 •	name
 •	date_of_birth
 •	speciality
