@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member details</title>
+</head>
+<body>
+    <table>
+      <tr>
+        <td>Nume</td>
+        <td>{{member.name}}</td>
+      </tr>
+      <tr>
+        <td>CNP</td>
+        <td>{{member.cnp}}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{member.email}}</td>
+      </tr>
+      <tr>
+        <td>Data nasterii</td>
+        <td>{{member.date_of_birth}}</td>
+      </tr>
+      <tr>
+        <td>Data insciere</td>
+        <td>{{member.join_date}}</td>
+      </tr>
+      <tr>
+        <td>Data expirare abonament</td>
+        <td>{{member.expiry_date}}</td>
+      </tr>
+    </table>
+
+    <button onclick="window.location.href='remove';">Remove member</button>
+
+</body>
+</html>
+
+<style>
+  th, td, button {
+    padding: 10px 20px; /* Adjust these values to increase/decrease padding */
+  }
+</style>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Members</title>
+</head>
+<body>
+
+    {% if members_list %}
+    These are the members of the fitness club:
+    <ul>
+    {% for member in members_list %}
+        <li><a href="/member/{{ member.cnp }}/">{{ member.name }}</a></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p>No members currently enrolled.</p>
+    {% endif %}
+</body>
+</html>
