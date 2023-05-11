@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer details</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Nume</td>
+        <td>{{ trainer.name }}</td>
+    </tr>
+    <tr>
+        <td>CNP</td>
+        <td>{{ trainer.cnp }}</td>
+    </tr>
+    <tr>
+        <td>Data nasterii</td>
+        <td>{{ trainer.date_of_birth }}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{{ trainer.email }}</td>
+    </tr>
+    <tr>
+        <td>specialization</td>
+        <td>{{ trainer.speciality }}</td>
+    </tr>
+    <tr>
+        <td>short description</td>
+        <td>{{ trainer.description}}</td>
+    </tr>
+
+</table>
+
+<button onclick="window.location.href='remove';">Remove trainer</button>
+
+</body>
+</html>
