@@ -1,6 +1,18 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
 from member.models import Member
+
+from member.forms import MemberForm
+
+
+class MemberCreateView(CreateView):
+    template_name = 'member/create_member.html'  # scriem calea catre pagina html unde vom gasi formularul generat
+    model = Member
+    # fields = '__all__' # preia toate fielduril din model si in interfata va fi in ordinea declarata in models.py
+    form_class = MemberForm
+    success_url = reverse_lazy('member_index')
 
 
 def index(request):

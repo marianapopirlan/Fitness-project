@@ -1,17 +1,8 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import get_object_or_404
 
-from .models import Class
-
-from django.views.generic import CreateView, ListView, UpdateView, DeleteView, DetailView
-
-import datetime
-
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-from django.db.models import Q
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView, UpdateView, DeleteView, DetailView
+from django.views.generic import CreateView
 
-from trainer.models import Trainer
 from .models import Class
 
 from .forms import ClassForm
@@ -24,7 +15,7 @@ class ClassCreateView(CreateView):
     model = Class
     # fields = '__all__' # preia toate fielduril din model si in interfata va fi in ordinea declarata in models.py
     form_class = ClassForm
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('class_index')
 
 
 def index(request):

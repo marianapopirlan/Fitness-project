@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Members</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
 
     {% if members_list %}
     These are the members of the fitness club:
@@ -16,5 +12,6 @@
     {% else %}
     <p>No members currently enrolled.</p>
     {% endif %}
-</body>
-</html>
+
+    <button onclick="window.location.href='create';">Add a new member</button>
+{% endblock content %}

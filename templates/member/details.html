@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Member details</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
     <table>
       <tr>
         <td>Nume</td>
@@ -34,11 +32,4 @@
 
     <button onclick="window.location.href='remove';">Remove member</button>
 
-</body>
-</html>
-
-<style>
-  th, td, button {
-    padding: 10px 20px; /* Adjust these values to increase/decrease padding */
-  }
-</style>
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>{{class_var.name}}</td>
+      </tr>
+      <tr>
+        <td>ID</td>
+        <td>{{class_var.id}}</td>
+      </tr>
+      <tr>
+        <td>Trainer</td>
+        <td>{{class_var.trainer}}</td>
+      </tr>
+      <tr>
+        <td>Data si ora</td>
+        <td>{{class_var.date}}</td>
+      </tr>
+    </table>
+
+    <button onclick="window.location.href='remove';">Remove class</button>
+
+{% endblock content %}
+
+
+<style>
+  th, td, button {
+    padding: 10px 20px; /* Adjust these values to increase/decrease padding */
+  }
+</style>
